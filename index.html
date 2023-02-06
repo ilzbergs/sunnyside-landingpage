@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+    integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+    crossorigin="anonymous"></script>
+
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="header-text">
+        <h1>We are creatives</h1>
+        <img src="./images/icon-arrow-down.svg" alt="Arrow down">
+      </div>
+      <nav>
+        <div class="header-container">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="Logo">
+          </div>
+          <div class="mobile">
+            <img src="./images/icon-hamburger.svg" alt="Hamburger menu" class="dropbtn" onclick="dropdown()">
+            <ul id="dropdown" class="dropdown-content">
+              <div class="triangle"></div>
+              <li><a href="">About</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Projects</a></li>
+              <li><a href="" class="contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Projects</a></li>
+              <li><a href="" class="contact">Contact</a></li>
+            </ul>
+          </div>
+      </nav>
+    </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section id="learn">
+        <div class="learn-container">
+          <div class="learn-wrapper reverse">
+            <div class="learn-img">
+              <img src="./images/mobile/image-transform.jpg" class="img" alt="Transform">
+            </div>
+            <div class="wrapper">
+              <h2>Transform your brand</h2>
+              <p>We are a full-service creative agency specializing in helping brands grow fast.
+                Engage your clients through compelling visuals that do most of the marketing for you.</p>
+              <button class="btn yellow">Learn more</button>
+            </div>
+          </div>
+          <div class="learn-wrapper">
+            <div class="learn-img">
+              <img src="./images/mobile/image-stand-out.jpg" class="img" alt="Stand out">
+            </div>
+            <div class="wrapper">
+              <h2>Stand out to the right audience
+              </h2>
+              <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
+                we’ll build and
+                extend your brand in digital places.
+              </p>
+              <button class="btn red">Learn more</button>
+            </div>
+          </div>
+          <div class="learn-wrapper">
+            <div class="study">
+              <img src="./images/mobile/image-graphic-design.jpg" alt="Graphic" class="graphic">
+              <div class="study-wrapper first">
+                <h3>Graphic Design</h3>
+                <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+                  potential clients’
+                  attention.
+                </p>
+              </div>
+            </div>
+            <div class="study">
+              <img src="./images/mobile/image-photography.jpg" alt="Photography" class="photography">
+              <div class="study-wrapper second">
+                <h3>Photography</h3>
+                <p>Increase your credibility by getting the most stunning, high-quality photos that improve your
+                  business
+                  image.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials">
+        <h3 class="testimonial-header">Client testimonials</h3>
+        <div class="testimonials-wrapper">
+          <div class="testimonial">
+            <img src="./images/image-emily.jpg" alt="Picture of Emily">
+            <p class="description">We put our trust in Sunnyside and they delivered, making sure our needs were met and
+              deadlines were always hit.
+            </p>
+            <h4 class="author">
+              Emily R.
+            </h4>
+            <p class="profession">
+              Marketing Director
+            </p>
+          </div>
+          <div class="testimonial">
+            <img src="./images/image-thomas.jpg" alt="Picture of Emily">
+            <p class="description">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made
+              it a satisfying and enjoyable experience.
+            </p>
+            <h4 class="author">
+              Thomas S.
+            </h4>
+            <p class="profession">
+              Chief Operating Officer
+            </p>
+          </div>
+          <div class="testimonial">
+            <img src="./images/image-jennie.jpg" alt="Picture of Emily">
+            <p class="description">Incredible end result! Our sales increased over 400% when we worked with Sunnyside.
+              Highly recommended!
+            </p>
+            <h4 class="author">
+              Jennie F.
+            </h4>
+            <p class="profession">
+              Business Owner
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="gallery">
+        <div class="gallery-wrapper">
+          <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="Milkbottles">
+          <img src="./images/mobile/image-gallery-orange.jpg" alt="Orange">
+          <img src="./images/mobile/image-gallery-cone.jpg" alt="Cone">
+          <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="Sugar Cubes">
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <i><img src="./images/logo.svg" class="footer-logo" alt="Logo"></i>
+      <ul>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Projects</a></li>
+      </ul>
+      <div class="social">
+        <a href=""> <i class="fab fa-facebook-square"></i></a>
+        <a href=""> <i class="fab fa-twitter-square"></i></a>
+        <a href=""> <i class="fab fa-instagram-square"></i></a>
+        <a href=""> <i class="fab fa-pinterest-square"></i> </a>
+      </div>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://my-beautiful-portfolio.herokuapp.com/" target="_blank">Toms Ilzbergs</a>.
+    </div>
+  </footer>
+</body>
+
+</html>
